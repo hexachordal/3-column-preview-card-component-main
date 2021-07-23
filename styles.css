@@ -1,5 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.container #sedan {
+  background-color: #e38826;
+}
+
+.container #suv {
+  background-color: #006970;
+}
+
+.container #luxury {
+  background-color: #004241;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
