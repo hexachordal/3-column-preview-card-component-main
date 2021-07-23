@@ -11,8 +11,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  height: 100vh;
-  margin-top: 10%;
+  height: 100%;
+  margin: 10% 0 10% 0;
   justify-items: center;
 }
 
@@ -28,11 +28,30 @@ body {
   height: 100%;
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
-  padding: 0 11% 0 11%;
+  padding: 11%;
   color: rgba(255, 255, 255, 0.75);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 2% 2% 0 0;
+}
+
+.container #sedan div {
+  background-color: #f2f2f2;
+  color: #e38826;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50px;
+  padding: 5%;
+  margin: 15% 0% 10% 0%;
+  border: 2px solid transparent;
+}
+
+.container #sedan div:hover {
+  color: #f2f2f2;
+  cursor: pointer;
+  background-color: #e38826;
+  border: 2px solid #f2f2f2;
 }
 
 .container #suv {
@@ -41,10 +60,29 @@ body {
   height: 100%;
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
-  padding: 0 11% 0 11%;
+  padding: 11%;
   color: rgba(255, 255, 255, 0.75);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.container #suv div {
+  background-color: #f2f2f2;
+  color: #006970;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50px;
+  padding: 5%;
+  margin: 15% 0% 10% 0%;
+  border: 2px solid transparent;
+}
+
+.container #suv div:hover {
+  color: #f2f2f2;
+  cursor: pointer;
+  background-color: #006970;
+  border: 2px solid #f2f2f2;
 }
 
 .container #luxury {
@@ -53,11 +91,30 @@ body {
   height: 100%;
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
-  padding: 0 11% 0 11%;
+  padding: 11%;
   color: rgba(255, 255, 255, 0.75);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 0 0 2% 2%;
+}
+
+.container #luxury div {
+  background-color: #f2f2f2;
+  color: #004241;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50px;
+  padding: 5%;
+  margin: 15% 0% 10% 0%;
+  border: 2px solid transparent;
+}
+
+.container #luxury div:hover {
+  color: #f2f2f2;
+  cursor: pointer;
+  background-color: #004241;
+  border: 2px solid #f2f2f2;
 }
 
 .attribution {
