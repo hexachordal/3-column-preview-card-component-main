@@ -6,25 +6,55 @@ $bg-font: 'Big Shoulders Display', cursive
 $orange: hsl(31, 77%, 52%)
 $cyan: hsl(184, 100%, 22%)
 $d-cyan: hsl(179, 100%, 13%)
-$t-white: hsla(0, 0%, 100%, 0.75)
-$l-gray: hsl(0, 0%, 95%)
+$l-gray: hsla(0, 0%, 100%, 0.75)
+$t-white: hsl(0, 0%, 95%)
 
+@mixin card($color: $orange)
+    background-color: $color
+    width: 80vw
+    height: 100%
+    font-family: $sm-font
+    font-size: 15px
+    padding: 0 5% 0 5%
+    color: $l-gray
+    box-sizing: border-box
+    
+    
+
+    
+    
+
+body
+    margin: 0
+    box-sizing: border-box
 
 .container
     display: grid
     grid-template-columns: 1fr
+    height: 100vh
+    margin-top: 10%
+    justify-items: center
+
+    h1
+        color: $t-white
+
 
     #sedan
-        background-color: $orange
-
+        @include card
+        border-radius: 2% 2% 0 0
+        
     #suv
-        background-color: $cyan
+        @include card($color: $cyan)
 
     #luxury
-        background-color: $d-cyan
+        @include card($color: $d-cyan)
+        border-radius: 0 0 2% 2%
 
     
 .attribution 
+    position: absolute
+    margin-top: 14px
+    width: 100%
     font-size: 11px 
     text-align: center
 
