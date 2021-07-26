@@ -22,8 +22,11 @@
   }
   .container #sedan {
     background-color: #e38826;
+    display: -ms-grid;
+    display: grid;
     width: 80vw;
     height: 100%;
+    line-height: 3.5vh;
     font-family: "Lexend Deca", sans-serif;
     font-size: 15px;
     padding: 11%;
@@ -38,6 +41,9 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     border-radius: 50px;
     padding: 5%;
     margin: 15% 0% 10% 0%;
@@ -51,8 +57,11 @@
   }
   .container #suv {
     background-color: #006970;
+    display: -ms-grid;
+    display: grid;
     width: 80vw;
     height: 100%;
+    line-height: 3.5vh;
     font-family: "Lexend Deca", sans-serif;
     font-size: 15px;
     padding: 11%;
@@ -66,6 +75,9 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     border-radius: 50px;
     padding: 5%;
     margin: 15% 0% 10% 0%;
@@ -79,8 +91,11 @@
   }
   .container #luxury {
     background-color: #004241;
+    display: -ms-grid;
+    display: grid;
     width: 80vw;
     height: 100%;
+    line-height: 3.5vh;
     font-family: "Lexend Deca", sans-serif;
     font-size: 15px;
     padding: 11%;
@@ -95,6 +110,9 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     border-radius: 50px;
     padding: 5%;
     margin: 15% 0% 10% 0%;
@@ -140,8 +158,11 @@
   }
   .container #sedan {
     background-color: #e38826;
+    display: -ms-grid;
+    display: grid;
     width: 70vw;
     height: 100%;
+    line-height: 3.5vh;
     font-family: "Lexend Deca", sans-serif;
     font-size: 20px;
     padding: 11%;
@@ -156,6 +177,9 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     border-radius: 50px;
     padding: 5%;
     margin: 15% 0% 10% 0%;
@@ -169,8 +193,11 @@
   }
   .container #suv {
     background-color: #006970;
+    display: -ms-grid;
+    display: grid;
     width: 70vw;
     height: 100%;
+    line-height: 3.5vh;
     font-family: "Lexend Deca", sans-serif;
     font-size: 20px;
     padding: 11%;
@@ -184,6 +211,9 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     border-radius: 50px;
     padding: 5%;
     margin: 15% 0% 10% 0%;
@@ -197,8 +227,11 @@
   }
   .container #luxury {
     background-color: #004241;
+    display: -ms-grid;
+    display: grid;
     width: 70vw;
     height: 100%;
+    line-height: 3.5vh;
     font-family: "Lexend Deca", sans-serif;
     font-size: 20px;
     padding: 11%;
@@ -213,6 +246,9 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     border-radius: 50px;
     padding: 5%;
     margin: 15% 0% 10% 0%;
@@ -236,11 +272,13 @@
   }
 }
 
-@media screen and (max-width: 1439px) and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   body {
     margin: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    height: 100vh;
+    padding: 11%;
   }
   .container {
     display: -ms-grid;
@@ -248,7 +286,6 @@
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     height: 100%;
-    margin: 10% 0 10% 0;
     justify-items: center;
   }
   .container h1 {
@@ -258,10 +295,13 @@
   }
   .container #sedan {
     background-color: #e38826;
-    width: 80vw;
-    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    height: 65vh;
+    line-height: 3.5vh;
     font-family: "Lexend Deca", sans-serif;
-    font-size: 30px;
+    font-size: 1.4vw;
     padding: 11%;
     color: rgba(255, 255, 255, 0.75);
     -webkit-box-sizing: border-box;
@@ -274,6 +314,9 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     border-radius: 50px;
     padding: 5%;
     margin: 15% 0% 10% 0%;
@@ -287,10 +330,13 @@
   }
   .container #suv {
     background-color: #006970;
-    width: 80vw;
-    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    height: 65vh;
+    line-height: 3.5vh;
     font-family: "Lexend Deca", sans-serif;
-    font-size: 30px;
+    font-size: 1.4vw;
     padding: 11%;
     color: rgba(255, 255, 255, 0.75);
     -webkit-box-sizing: border-box;
@@ -302,6 +348,9 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     border-radius: 50px;
     padding: 5%;
     margin: 15% 0% 10% 0%;
@@ -315,10 +364,13 @@
   }
   .container #luxury {
     background-color: #004241;
-    width: 80vw;
-    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    height: 65vh;
+    line-height: 3.5vh;
     font-family: "Lexend Deca", sans-serif;
-    font-size: 30px;
+    font-size: 1.4vw;
     padding: 11%;
     color: rgba(255, 255, 255, 0.75);
     -webkit-box-sizing: border-box;
@@ -331,6 +383,9 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     border-radius: 50px;
     padding: 5%;
     margin: 15% 0% 10% 0%;
@@ -345,8 +400,9 @@
   .attribution {
     position: absolute;
     margin-top: 14px;
-    width: 100%;
-    font-size: 11px;
+    bottom: 1%;
+    left: 40%;
+    font-size: 1vw;
     text-align: center;
   }
   .attribution a {

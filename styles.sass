@@ -12,10 +12,12 @@ $t-white: hsl(0, 0%, 95%)
 
 
 
-@mixin card($color: $orange, $f-size: 15px, $w: 80vw)
+@mixin card($color: $orange, $f-size: 15px, $w: 80vw, $h: 100%)
     background-color: $color
+    display: grid
     width: $w
-    height: 100%
+    height: $h
+    line-height: 3.5vh
     font-family: $sm-font
     font-size: $f-size
     padding: 11%
@@ -26,6 +28,7 @@ $t-white: hsl(0, 0%, 95%)
     background-color: $t-white
     color: $color
     width: fit-content
+    height: fit-content
     border-radius: 50px
     padding: 5%
     margin: 15% 0% 10% 0%
@@ -135,17 +138,18 @@ $t-white: hsl(0, 0%, 95%)
             color: hsl(228, 45%, 44%)
 
 
-@media screen and (max-width: 1439px) and (min-width: 1024px)
+@media screen and (min-width: 1024px)
 
     body
         margin: 0
         box-sizing: border-box
+        height: 100vh
+        padding: 11%
 
     .container
         display: grid
         grid-template-columns: 1fr 1fr 1fr
         height: 100%
-        margin: 10% 0 10% 0
         justify-items: center
 
         h1
@@ -155,18 +159,18 @@ $t-white: hsl(0, 0%, 95%)
 
 
         #sedan
-            @include card($f-size: 30px)
+            @include card($f-size: 1.4vw, $w: 100%, $h: 65vh)
             border-radius: 2% 0 0 2%
             div
                 @include button
             
         #suv
-            @include card($color: $cyan, $f-size: 30px)
+            @include card($color: $cyan, $f-size: 1.4vw, $w: 100%, $h: 65vh)
             div
                 @include button($color: $cyan)
 
         #luxury
-            @include card($color: $d-cyan, $f-size: 30px)
+            @include card($color: $d-cyan, $f-size: 1.4vw, $w: 100%, $h: 65vh)
             border-radius: 0 2% 2% 0
             div
                 @include button($color: $d-cyan)
@@ -175,8 +179,9 @@ $t-white: hsl(0, 0%, 95%)
     .attribution 
         position: absolute
         margin-top: 14px
-        width: 100%
-        font-size: 11px 
+        bottom: 1%
+        left: 40%
+        font-size: 1vw
         text-align: center
 
         a 
