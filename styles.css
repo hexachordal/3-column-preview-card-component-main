@@ -140,10 +140,10 @@
   }
   .container #sedan {
     background-color: #e38826;
-    width: 80vw;
+    width: 70vw;
     height: 100%;
     font-family: "Lexend Deca", sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     padding: 11%;
     color: rgba(255, 255, 255, 0.75);
     -webkit-box-sizing: border-box;
@@ -169,10 +169,10 @@
   }
   .container #suv {
     background-color: #006970;
-    width: 80vw;
+    width: 70vw;
     height: 100%;
     font-family: "Lexend Deca", sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     padding: 11%;
     color: rgba(255, 255, 255, 0.75);
     -webkit-box-sizing: border-box;
@@ -197,10 +197,10 @@
   }
   .container #luxury {
     background-color: #004241;
-    width: 80vw;
+    width: 70vw;
     height: 100%;
     font-family: "Lexend Deca", sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     padding: 11%;
     color: rgba(255, 255, 255, 0.75);
     -webkit-box-sizing: border-box;

@@ -12,9 +12,9 @@ $t-white: hsl(0, 0%, 95%)
 
 
 
-@mixin card($color: $orange, $f-size: 15px)
+@mixin card($color: $orange, $f-size: 15px, $w: 80vw)
     background-color: $color
-    width: 80vw
+    width: $w
     height: 100%
     font-family: $sm-font
     font-size: $f-size
@@ -107,18 +107,18 @@ $t-white: hsl(0, 0%, 95%)
 
 
         #sedan
-            @include card($f-size: 30px)
+            @include card($f-size: 20px, $w: 70vw)
             border-radius: 2% 2% 0 0
             div
                 @include button
             
         #suv
-            @include card($color: $cyan, $f-size: 30px)
+            @include card($color: $cyan, $f-size: 20px, $w: 70vw)
             div
                 @include button($color: $cyan)
 
         #luxury
-            @include card($color: $d-cyan, $f-size: 30px)
+            @include card($color: $d-cyan, $f-size: 20px, $w: 70vw)
             border-radius: 0 0 2% 2%
             div
                 @include button($color: $d-cyan)
